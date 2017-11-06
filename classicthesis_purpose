@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Original Template:
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Modified for a Classicthesis-Styled Cover Letter
+% Version 1.0 (13/10/2017)
+% Author:
+% Stuart Nygard
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+ 
+\documentclass{scrartcl}
+ 
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+ 
+\usepackage[T1]{fontenc} % For special characters
+\usepackage{ragged2e} % For justifying
+\usepackage{lipsum} % Please remove this, along with the \lipsum command
+ 
+% Page Margins. Feel free to play around with them.
+\usepackage[verbose]{geometry}
+\geometry{top=25pt, left=70pt, right=70pt,
+textwidth=450pt,textheight=900pt,
+heightrounded}
+ 
+\definecolor{micron}{rgb}{0.000, 0.265, 0.581}
+ 
+\renewcommand{\cvheadingfont}{\LARGE\color{micron}} % Font color of your name at the top
+ 
+\usepackage{hyperref} % Required for adding links and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=micron, linkcolor=micron} % Set link colors
+ 
+% Commands for parts of the letter
+\newcommand{\ToAddr}[1]{\vspace{2.5em}\noindent #1}
+ 
+\newcommand{\LetterDate}[1]{\hfill #1\par\vspace{2em}}
+ 
+\newcommand{\Subject}[1]{\hangindent=2em\hangafter=0\justifying\textbf{Subject: #1}\par\vspace{0.5em}}
+ 
+\newcommand{\Opening}[1]{\justifying #1\par\vspace{1em}}
+ 
+\newcommand{\Sign}[1]{\vspace{2em}\noindent\textbf{Sincerely,}\vspace{1em}\\#1\par\vspace{0.5em}}
+ 
+\newcommand{\Encl}[1]{\vspace{2em}\noindent\footnotesize\color{micron}\emph{Encl. #1}\par\vspace{0.5em}}
+ 
+\renewcommand{\cfoot}[3]{\centering\normalsize\vspace{2.5em} #1\\#2\ $\cdotp$\ #3}
+ 
+%----------------------------------------------------------------------------------------
+\begin{document}
+\date{} % To force TeX not to display a date at the bottom.
+ 
+\thispagestyle{empty}
+\centering
+\begin{cv}{%\spacedallcaps{\textnormal{Stuart} A. Nygard}\\
+\textls[140]{Stuart\ \ Alan\ \ NYGARD}}\vspace{0.75em}
+{\large\color{micron} Device Characterization Engineer\ $\cdotp$\ Micron Technology}\vspace{1.5em}
+ 
+\justifying
+ 
+\ToAddr{The Admissions Committee,\\ George Washington University,\\ 2121 I St. NW,\\ Washington, DC.\\}
+ 
+\vspace{1em}
+ 
+\LetterDate{\today}
+ 
+\Subject{Ph.D Program in Mathematics}
+ 
+\vspace{1em}
+\ \\
+\Opening{Dear Admissions Committee,}
+
+My purpose in applying to the PhD program at George Washington is twofold: to contribute to the knowledge of mathematics and to teach college mathematics well. I am part of a research team developing new types of computer memory chips. Engineering development is interesting, but the results are often transient or quickly obsoleted. Mathematics research, on the other hand, has what G.H. Hardy called "a certain character of permanence." For example, I have an interest in cryptography, both as a professional programmer and as a mathematician. The software implementation of a cryptographic algorithm, while curious, is much less interesting than the development of the algorithm itself. During an independent study, I pursued the following novel idea. Consider a plaintext message as a element in some sequence space. Using Pr\"ufer's algorithm, a sequence can be transformed into a tree in the graph-theoretic domain. Manipulations of the tree may have chaotic results in the sequence space. This approach can be generalized to a cryptographic algorithm using any two spaces with a well-defined mapping between them. Problems like this one are a motivating factor in my pursuit of a PhD.
+
+I also want to share my passion for mathematics through teaching. My goal is to be a Professor of Mathematics; that is, to have dual responsibilities: expanding our horizon of knowledge through research, and also to prepare the next generation through disciplined study. Mathematics is a language, and through that language, our understanding of the world is conveyed. For me, and ideally for my students, mathematics gives us a common foundation for knowledge. I am dismayed when I see the dismal, uninteresting math classes taught to non-majors. For today's science or engineering student, math courses rarely nothing more than a series of formulae and applications. For the students of arts or humanities, math courses are often a hurdle, boring at best, impassable at worst. I understand that the world of academia values original research highly, but I also add to that the responsibility to teach well. During my time as a college instructor, I heard the same tale many times: "I loved math in grade school/high school/college, but I had the worst teacher ever, and now I hate it!" One passionate teacher will not change every student's mind about mathematics, but perhaps I can share my wonder and awe with a few students. Thank you for your consideration.
+
+
+\Sign{Stuart Nygard}
+%\Encl{CV}
+\cfoot{210 N. Haines St. \ $\cdotp$\ Boise \ $\cdotp$\ ID\ $\cdotp$\ 83712}{\href{mailto:stuart.a.nygard@gmail.com}{stuart.a.nygard@gmail.com}}{+1 (701) 501 6565}
+ 
+\end{cv}
+ 
+\end{document}
