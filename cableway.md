@@ -3,6 +3,11 @@
 ## Getting Started
 - [Markdown Guide](https://www.markdownguide.org/)
 
+## Estimates
+
+- [Speed and cost](https://pdfs.semanticscholar.org/1a2b/56222bad70bae34b669f57c5cef6ed6b999e.pdf)
+- [Types](http://gondolaproject.com/learn-the-basics-what-is-cable-propelled-transit/)
+
 ## Land Use
 
 ### Boise
